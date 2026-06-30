@@ -1,0 +1,6 @@
+{
+  "name": "VAT Compliance Portal",
+  "description": "An interactive, fully functional Shopify & Etsy cross-platform monthly VAT compliance and reconciliation workbook.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

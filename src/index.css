@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #051C2C;
+  --color-accent: #2251FF;
+  --color-muted: #888888;
+  --color-page-bg: #F5F5F2;
+  --color-input-bg: #FFFDE7;
+  --color-positive: #00C853;
+  --color-negative: #D32F2F;
+  --color-border-custom: #E8E8E6;
+  
+  --font-serif: "Georgia", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --color-primary: #051C2C;
+  --color-accent: #2251FF;
+  --color-bg: #F5F5F2;
+  --color-muted: #888888;
+  --color-body-text: #1A1A2E;
+  
+  --color-positive: #00C853;
+  --color-negative: #D32F2F;
+  
+  --color-surface: #FFFFFF;
+  --color-input-bg: #FFFDE7;
+  --color-border: #E8E8E6;
+  
+  --font-heading: "Georgia", serif;
+  --font-body: "Inter", sans-serif;
+  
+  --tracking-display: -0.03em;
+  --tracking-heading: -0.02em;
+  --tracking-label: 0.06em;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-body-text);
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Base custom font mappings */
+.serif {
+  font-family: "Georgia", serif;
+  letter-spacing: -0.02em;
+}
+
+.font-serif-heading {
+  font-family: var(--font-heading);
+  letter-spacing: var(--tracking-heading);
+}
+
+.font-serif-display {
+  font-family: var(--font-heading);
+  letter-spacing: var(--tracking-display);
+}
+
+.tracking-label-custom {
+  letter-spacing: var(--tracking-label);
+}
+
+/* Geometric Balance Theme Card Class */
+.card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(5, 28, 44, 0.06);
+  transition: transform 0.22s ease-out, box-shadow 0.22s ease-out;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(5, 28, 44, 0.1);
+}
+
+/* Card lift hover animation */
+.card-hover-effect {
+  transition: transform 250ms cubic-bezier(0.34, 1.56, 0.64, 1.0),
+              box-shadow 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(5, 28, 44, 0.08);
+}
+
+/* Geometric Balance Theme Elements */
+.insight-block {
+  border-left: 3px solid var(--color-accent);
+  background: rgba(34, 81, 255, 0.04);
+  padding: 12px 16px;
+}
+
+.editable {
+  background-color: var(--color-input-bg);
+  border: 1px solid rgba(5, 28, 44, 0.08);
+}
+
+.data-bar {
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(5, 28, 44, 0.1);
+  overflow: hidden;
+}
+
+.data-bar-fill {
+  height: 100%;
+  background-color: var(--color-accent);
+}
+
+/* Modern Geometric Balance Tables */
+table th {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  text-align: left;
+  padding: 12px 16px;
+  background-color: #051C2C !important;
+  color: white !important;
+}
+
+/* Page transitions */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 220ms cubic-bezier(0.0, 0.0, 0.2, 1.0) both;
+}
+
+/* Interactive cell feedback */
+.interactive-cell-hover {
+  transition: transform 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              filter 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.interactive-cell-hover:hover {
+  transform: scale(1.04);
+  filter: brightness(1.05);
+  cursor: pointer;
+}
+
+/* Hide scrollbars but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

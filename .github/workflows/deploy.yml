@@ -1,0 +1,61 @@
+# GitHub Actions Workflow for automated deployment to GitHub Pages
+# Designed to be resilient even if package-lock.json is missing.
+
+name: Deploy Static SaaS to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+# Set permissions for native GitHub Pages actions
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          # CRITICAL: We deliberately do NOT define 'cache: npm' here.
+          # This prevents the 'Dependencies lock file not found' error in environments
+          # without a committed package-lock.json.
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Install dependencies
+        # Uses 'npm install' which dynamically resolves dependencies and generates the lock file
+        # during the runtime execution in the runner container.
+        run: npm install
+
+      - name: Build static Vite application
+        run: npm run build
+
+      - name: Upload static build artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Vite builds static files directly into the dist/ directory
+          path: './dist'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
