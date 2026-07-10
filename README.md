@@ -10,7 +10,7 @@
 >
 > 🌐 **Open in Browser** → [*HTML live demo*](https://hyvoid.github.io/VAT-Compliance-Portal/)
 >
-> 📥 **Download Excel** → *GitHub Release / Gumroad download link*
+> 📥 **Download Excel** → [*download link*](https://alexhasgreatestuff.gumroad.com/l/dsgleu)
 >
 > Available in both **browser-based HTML** and **Excel workbook** formats.
 
@@ -18,15 +18,7 @@
 
 ## Screenshots
 
-### Browser Version
-
-<!-- screenshot: browser version -->
-
-*Operational view showing monthly VAT exposure, country-level liabilities, filing readiness status, and unresolved compliance exceptions.*
-
-### Excel Version
-
-<!-- screenshot: excel version -->
+<img width="1376" height="768" alt="Gemini_Generated_Image_j10e6dj10e6dj10e" src="https://github.com/user-attachments/assets/63b1ac44-210a-43c0-bbce-f75a0961268b" />
 
 *Operational workbook showing raw imports, VAT calculation engine, exception controls, and filing output sheets.*
 
