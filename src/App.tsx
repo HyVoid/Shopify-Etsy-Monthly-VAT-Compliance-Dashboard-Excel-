@@ -316,6 +316,7 @@ export default function App() {
             netSales={activeMonthStats.netSales}
             netVatPayable={activeMonthStats.netVatPayable}
             exceptionsCount={exceptions.length}
+            calculatedData={calculatedData}
           />
         );
       case 'shopify-import':
@@ -369,6 +370,8 @@ export default function App() {
             reportData={reportData}
             selectedMonth={selectedMonth}
             hasExceptions={exceptions.length > 0}
+            calculatedData={calculatedData}
+            rates={rates}
           />
         );
       default:

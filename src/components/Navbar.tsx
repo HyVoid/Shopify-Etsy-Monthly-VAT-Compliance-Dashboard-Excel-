@@ -46,8 +46,8 @@ export default function Navbar({
             <div className="w-4 h-4 border-2 border-white rotate-45"></div>
           </div>
           <div>
-            <h1 className="text-base font-bold text-[#051C2C] leading-none tracking-tight">
-              STRATOS<span className="font-normal opacity-50">SaaS</span>
+            <h1 className="text-sm font-bold text-[#051C2C] leading-none tracking-tight">
+              Shopify-Etsy-Monthly-VAT-Compliance-Dashboard
             </h1>
             <p className="text-[10px] text-[#888888] tracking-widest uppercase mt-0.5">
               VAT Compliance Portal
