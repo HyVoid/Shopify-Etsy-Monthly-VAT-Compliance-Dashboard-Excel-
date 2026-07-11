@@ -8,9 +8,9 @@
 
 > ## **No signup. No installation. Free.**
 >
-> 🌐 **Open in Browser** → [*HTML live demo*](https://hyvoid.github.io/VAT-Compliance-Portal/)
+> 🌐 **Open in Browser** → [*HTML live demo*](https://hyvoid.github.io/Shopify-Etsy-Monthly-VAT-Compliance-Dashboard-Excel-/)
 >
-> 📥 **Download Excel** → [*download link*](https://alexhasgreatestuff.gumroad.com/l/dsgleu)
+> 📥 **Download Excel** → [*download link*](https://alexhasgreatestuff.gumroad.com/l/ytjhap)
 >
 > Available in both **browser-based HTML** and **Excel workbook** formats.
 
@@ -18,7 +18,7 @@
 
 ## Screenshots
 
-<img width="1376" height="768" alt="Gemini_Generated_Image_j10e6dj10e6dj10e" src="https://github.com/user-attachments/assets/63b1ac44-210a-43c0-bbce-f75a0961268b" />
+
 
 *Operational workbook showing raw imports, VAT calculation engine, exception controls, and filing output sheets.*
 
