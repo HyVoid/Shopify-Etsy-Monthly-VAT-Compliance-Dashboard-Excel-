@@ -18,6 +18,7 @@
 
 ## Screenshots
 
+<img width="1536" height="1024" alt="ChatGPT Image Jul 10, 2026, 10_57_27 PM" src="https://github.com/user-attachments/assets/0647caaf-da8c-4c2f-8669-37089173c404" />
 
 
 *Operational workbook showing raw imports, VAT calculation engine, exception controls, and filing output sheets.*
